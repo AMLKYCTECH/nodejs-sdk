@@ -1,0 +1,25 @@
+{
+  "name": "@amlkyc/sdk",
+  "version": "0.1.0",
+  "description": "Node.js SDK for amlkyc.tech API",
+  "main": "src/index.js",
+  "keywords": [
+    "aml",
+    "kyc",
+    "amlkyc",
+    "sdk",
+    "api"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "jest -i --runInBand",
+    "pretest": "node -e \"console.log('Using API key:', process.env.AMLKYC_API_KEY ? '***set***' : '***not set***')\"",
+    "example": "node examples/check-balance.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
